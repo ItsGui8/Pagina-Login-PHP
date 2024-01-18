@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fakebook</title>
+    <title>Page</title>
 </head>
 <body>
 
@@ -14,7 +14,7 @@
             </a>
             <ul>
                 <li><a href="index.php">Home</a></li>
-                <li><a href="#">About me</a></li>
+                <li><a href="#">About</a></li>
             </ul>
             <div>
                 <form action="includes/login.inc.php" method="post">
