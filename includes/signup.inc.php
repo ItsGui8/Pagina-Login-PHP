@@ -19,7 +19,7 @@
             exit();
         }
         else {
-            $sql = "SELECT emailUsers FROM users WHERE emailUsers=?";
+            $sql = "SELECT emailUsers FROM users WHERE emailUsers=?;";
             $stmt = mysqli_stmt_init($conn);
             if (!mysqli_stmt_prepare($stmt, $sql)) {
                 header("Location: ../signup.php?error=sqlerror");
@@ -35,7 +35,7 @@
                     exit();
                 }
                 else {
-                    $sql = "INSERT INTO users(emailUsers, passwordUsers) VALUES(?, ?)";
+                    $sql = "INSERT INTO users(emailUsers, passwordUsers) VALUES(?, ?);";
                     $stmt = mysqli_stmt_init($conn);
                         if (!mysqli_stmt_prepare($stmt, $sql)) {
                             header("Location: ../signup.php?error=sqlerror");
